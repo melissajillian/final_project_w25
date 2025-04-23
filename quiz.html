@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Character Quiz</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#other-main" class="skip-link">Skip to Main Content</a>
+            <!-- <a href="index.html">
+                <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+            </a> -->
+            <nav class="navigation">
+                <a href="index.html">
+                    <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+                </a>
+                <!-- The hamburger menu -->
+                <label class="ham" for='menu' tabindex="0">
+                    <img src="images/hamburger.png" alt="three white lines to make hamburger menu">
+                </label>
+                <input id='menu' type='checkbox' />
+                <ul class="nav-links">
+                    <!-- <li class="active"><a href = "index.html">Home</a></li> I linked the Monkey logo, so I don't want a redundant link -->
+                    <li><a href = "characters.html">Characters</a></li>
+                    <li><a href = "analysis.html">Dive Deeper</a></li>
+                    <li class="active"><a href = "quiz.html">Quiz</a></li>
+                </ul>
+             </nav>
+    </header>
+<main id="other-main">
+    <h1 class="analysish1">What <em>Arcane</em> Character Are You?</h1>
+
+    <div class="quiz-container">
+        <div id="quizIntro" class="quiz-screen active">
+            <h2 class="quiz-def">Take this quiz to find out which character from Arcane you're most like.</h2><br>
+            <button id="startQuizBtn">Start Quiz</button>
+        </div>
+        <form id="quiz-form">
+
+          <!-- Questions -->
+          <div class="question-page" id="question1">
+            <h2>1. What drives you most?</h2><br>
+            <label><input type="radio" name="q1" value="Vi,Vander,Sevika"> Protecting the ones I care about</label></br>
+            <label><input type="radio" name="q1" value="Silco,Singed,Ambessa"> Creating a better world, no matter the cost</label></br>
+            <label><input type="radio" name="q1" value="Viktor,Heimerdinger"> The pursuit of knowledge and innovation</label></br>
+            <label><input type="radio" name="q1" value="Jinx,Maddie"> Finding where I belong</label></br>
+            <label><input type="radio" name="q1" value="Caitlyn,Jayce"> Justice and doing what's right</label>
+            <button type="button" class="next-btn" data-next="question2">Next</button>
+          </div>
+
+          <div class="question-page" id="question2">
+            <h2>2. How do you handle conflict?</h2><br>
+            <label><input type="radio" name="q2" value="Vi,Sevika"> I face it head on</label></br>
+            <label><input type="radio" name="q2" value="Mel,Silco,Maddie"> I manipulate from behind the scenes to get my way</label></br>
+            <label><input type="radio" name="q2" value="Vander,Heimerdinger"> I try to avoid it and work toward resolving the issue</label></br>
+            <label><input type="radio" name="q2" value="Jinx,Jayce"> I tend to panic or act impulsively</label></br>
+            <label><input type="radio" name="q2" value="Ambessa,Viktor,Isha"> I plan every move carefully before I act</label>
+            <button type="button" class="next-btn" data-next="question3">Next</button>
+          </div>
+
+          <div class="question-page" id="question3">
+            <h2>3. What's your biggest flaw?</h2><br>
+            <label><input type="radio" name="q3" value="Jinx,Jayce,Ekko,Vander"> I let my emotions get the best of me</label></br>
+            <label><input type="radio" name="q3" value="Viktor,Singed,Isha"> I isolate myself and struggle to open up</label></br>
+            <label><input type="radio" name="q3" value="Vi,Sevika"> I'm too loyal to people who don't deserve it</label></br>
+            <label><input type="radio" name="q3" value="Ambessa,Mel,Maddie"> I struggle to see the cost and consequences of my decisions</label></br>
+            <label><input type="radio" name="q3" value="Jinx,Caitlyn"> I can't let go of the past</label>
+            <button type="button" class="next-btn" data-next="question4">Next</button>
+          </div>
+
+          <div class="question-page" id="question4">
+            <h2>4. How would your friends describe you?</h2><br>
+            <label><input type="radio" name="q4" value="Vi,Ekko,Sevika"> Tough, loyal, dependable</label></br>
+            <label><input type="radio" name="q4" value="Viktor,Isha,Singed,Maddie"> Intelligent, quiet, focused</label></br>
+            <label><input type="radio" name="q4" value="Silco,Mel,Ambessa"> Ambitious, persuasive, powerful</label></br>
+            <label><input type="radio" name="q4" value="Jinx,Isha"> Kind, creative, a little chaotic</label></br>
+            <label><input type="radio" name="q4" value="Caitlyn,Jayce,Heimerdinger"> Fair, Honest, Principled</label>
+            <button type="button" class="next-btn" data-next="question5">Next</button>
+          </div>
+
+          <div class="question-page" id="question5">
+            <h2>5. What's your greatest strength?</h2><br>
+            <label><input type="radio" name="q5" value="Vi,Sevika"> Bravery and resilience</label></br>
+            <label><input type="radio" name="q5" value="Viktor,Heimerdinger,Jinx"> Intelligence and problem-solving</label></br>
+            <label><input type="radio" name="q5" value="Mel,Silco,Ambessa"> Charisma and influence</label></br>
+            <label><input type="radio" name="q5" value="Jayce,Ekko"> Hope and belief in people</label></br>
+            <label><input type="radio" name="q5" value="Jinx,Vander,Vi"> Loyalty and love</label>
+            <button type="button" class="next-btn" data-next="question6">Next</button>
+          </div>
+
+          <div class="question-page" id="question6">
+            <h2>6. Which environment feels most like home?</h2><br>
+            <label><input type="radio" name="q6" value="Viktor,Jayce,Heimerdinger,Singed"> A workshop or lab</label></br>
+            <label><input type="radio" name="q6" value="Jinx,Ekko,Sevika"> A gritty city street, alive with danger and freedom</label></br>
+            <label><input type="radio" name="q6" value="Mel,Ambessa,Silco"> A place of power and elegance</label></br>
+            <label><input type="radio" name="q6" value="Vander,Caitlyn"> A cozy space surrounded by people I care about</label></br>
+            <label><input type="radio" name="q6" value="Isha,Viktor,Singed"> Somewhere quiet, hidden, and safe</label>
+            <button type="button" class="next-btn" data-next="question7">Next</button>
+          </div>
+
+          <div class="question-page" id="question7">
+            <h2>7. How do you define success?</h2><br>
+            <label><input type="radio" name="q7" value="Jayce,Ekko,Viktor"> Making a real change in the world</label></br>
+            <label><input type="radio" name="q7" value="Vi,Caitlyn,Jinx"> Staying true to myself, no matter what</label></br>
+            <label><input type="radio" name="q7" value="Silco,Ambessa,Mel,Maddie"> Gaining power and control</label></br>
+            <label><input type="radio" name="q7" value="Viktor,Heimerdinger,Singed"> Creating something meaningful</label></br>
+            <label><input type="radio" name="q7" value="Vander,Vi,Sevika"> Protecting my loved ones</label>
+            <button type="button" class="next-btn" data-next="question8">Next</button>
+          </div>
+
+          <div class="question-page" id="question8">
+            <h2>8. What would you do in a crisis?</h2><br>
+            <label><input type="radio" name="q8" value="Vi,Vander"> Jump in to protect everyone</label></br>
+            <label><input type="radio" name="q8" value="Heimerdinger,Isha,Viktor,Ekko,Caitlyn"> Keep calm and find a solution</label></br>
+            <label><input type="radio" name="q8" value="Silco,Ambessa,Jayce"> Take control and lead</label></br>
+            <label><input type="radio" name="q8" value="Jinx"> Lose control a little, chaos helps sometimes</label></br>
+            <label><input type="radio" name="q8" value="Singed,Isha,Mel,Maddie"> Watch from the shadows and act only when needed</label>
+            <button type="button" class="next-btn" data-next="question9">Next</button>
+          </div>
+
+          <div class="question-page" id="question9">
+            <h2>9. What do you fear most?</h2><br>
+            <label><input type="radio" name="q9" value="Vi,Jinx,Vander,Heimerdinger,Ekko"> Losing the people I love</label></br>
+            <label><input type="radio" name="q9" value="Silco,Singed"> Becoming irrelevant or forgotten</label></br>
+            <label><input type="radio" name="q9" value="Silco,Ambessa,Sevika"> Being weak or powerless</label></br>
+            <label><input type="radio" name="q9" value="Jayce,Viktor,Caitlyn"> Failing to live up to expectations</label></br>
+            <label><input type="radio" name="q9" value="Jinx,Ekko,Mel,Maddie"> Trusting someone who hurts me</label>
+            <button type="button" class="next-btn" data-next="question10">Next</button>
+          </div>
+
+          <div class="question-page" id="question10">
+            <h2>10. What's your leadership style?</h2><br>
+            <label><input type="radio" name="q10" value="Vi,Ekko,Caitlyn"> Lead by example - I fight alongside my people</label></br>
+            <label><input type="radio" name="q10" value="Silco,Ambessa,Jayce"> Lead from the top - I make the hard choices</label></br>
+            <label><input type="radio" name="q10" value="Viktor,Heimerdinger,Singes"> Lead quietly - influence through ideas and innovation</label></br>
+            <label><input type="radio" name="q10" value="Jinx,Sevika,Maddie,Isha"> I'm not really a leader - I'm just trying to survive</label></br>
+            <label><input type="radio" name="q10" value="Vander,Mel"> I don't lead with power - I lead with compassion</label>
+
+            <!-- Submit Button -->
+            <input type="submit" class="submit-btn" value="Who Am I?">
+          </div>
+
+        </form>
+
+        <!-- Display Result -->
+      <div class="question-page result-page">
+        <div id="resultContainer" class="result-container">
+            <button id="restartQuizBtn">Take Quiz Again</button>
+        </div>
+      </div>
+
+</main>
+<footer class="site-footer">
+    <p>© Copyrights <span id="year"></span> by Melissa Walters. All rights reserved.</p>
+</footer>
+</body>
+<script>
+    // got help from codexworld.com and the in-class exercise
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+    // quiz JavaScript => I got help from multipl YouTube videos and looking at online character quizzes with inspect
+
+    const characterScores = {};
+
+    // Start Quiz Button
+    document.getElementById("startQuizBtn").addEventListener("click", () => {
+    document.getElementById("quizIntro").classList.remove("active");
+    document.getElementById("question1").classList.add("active");
+    });
+
+    // Next Button Navigation
+    document.querySelectorAll(".next-btn").forEach(button => {
+    button.addEventListener("click", () => {
+        const currentPage = button.closest(".question-page");
+        const selected = currentPage.querySelector("input[type='radio']:checked");
+
+        if (!selected) {
+            alert("Please select an answer.");
+        return;
+        }
+
+    // Update character scores
+    const selectedCharacters = selected.value.toLowerCase().split(",");
+    selectedCharacters.forEach(char => {
+        const trimmedChar = char.trim();
+        characterScores[trimmedChar] = (characterScores[trimmedChar] || 0) + 1;
+    });
+
+    // Move to next question
+    const nextId = button.dataset.next;
+    currentPage.classList.remove("active");
+
+    const nextPage = document.getElementById(nextId);
+    if (nextPage) {
+      nextPage.classList.add("active");
+    }
+    });
+    });
+
+    // Submit
+    document.getElementById("quiz-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        showResult();
+    });
+
+    // Show Result Function
+    function showResult() {
+        const resultContainer = document.getElementById("resultContainer");
+        resultContainer.style.display = "block";
+
+    const characters = {
+        jinx: {
+            name: "Jinx",
+            image: "images/jinx.jpg",
+            bio: "https://arcane.fandom.com/wiki/Jinx",
+            description: "A chaotic force shaped by trauma, Jinx is unpredictable and driven by a desire for love and loyalty, even if it means destroying everything."
+        },
+        vi: {
+            name: "Vi",
+            image: "images/vi.jpg",
+            bio: "https://arcane.fandom.com/wiki/Vi",
+            description: "A brawler with a heart of gold, Vi is driven by loyalty, justice, and the desire to fix the past. She fights for those she loves, even when it hurts, and she never backs down from a fight."
+        },
+        vander: {
+            name: "Vander",
+            image: "images/vander.jpg",
+            bio: "https://arcane.fandom.com/wiki/Vander",
+            description: "The father figure of Zaun, Vander chose peace over violence, believing in a better world. His love for his people made him a leader, but it was also his downfall."
+        },
+        silco: {
+            name: "Silco",
+            image: "images/silco.jpg",
+            bio: "https://arcane.fandom.com/wiki/Silco",
+            description: "Silco is a revolutionary whose dream of Zaun's independence consumes him. Charismatic and manipulative, he sees love and control as tools to achieve his vision, even if it breaks the ones closest to him."
+        },
+        jayce: {
+            name: "Jayce",
+            image: "https://arcane.fandom.com/wiki/Jayce_Talis",
+            bio: "bios/jayce.html",
+            description: "A visionary and idealist, Jayce dreams of progress through science. But power comes with compromise, and he finds himself torn between innovation and responsibility."
+        },
+        viktor: {
+            name: "Viktor",
+            image: "images/viktor.jpg",
+            bio: "https://arcane.fandom.com/wiki/Viktor",
+            description: "A genius from the undercity, Viktor is driven to improve humanity. His brilliance is matched by his desperation and he risks everything, including his humanity, for progress."
+        },
+        ekko: {
+            name: "Ekko",
+            image: "images/ekko.jpg",
+            bio: "https://arcane.fandom.com/wiki/Ekko",
+            description: "A rebel and inventor, Ekko fights for Zaun with creativity and heart. He holds onto hope for a better future, but the weight of his past never leaves him."
+        },
+        heimerdinger: {
+            name: "Heimerdinger",
+            image: "images/heimerdinger.jpg",
+            bio: "https://leagueoflegends.fandom.com/wiki/Heimerdinger",
+            description: "One of Piltover's oldest and wisest minds, Heimerdinger values caution and legacy. He believes science must serve peace, not ambition, and fears innovation without foresight."
+        },
+        mel: {
+            name: "Mel Medarda",
+            image: "images/mel.jpg",
+            bio: "https://arcane.fandom.com/wiki/Mel_Medarda",
+            description: "A Piltover councilwoman and political strategist, Mel uses elegance and influence to shape power. Her charm hides a sharp intellect — and scars from a family of warriors."
+        },
+        caitlyn: {
+            name: "Caitlyn",
+            image: "images/caitlyn.jpg",
+            bio: "https://arcane.fandom.com/wiki/Caitlyn_Kiramman",
+            description: "A principled enforcer from Piltover, Caitlyn believes in justice above all. Her compassion and courage drive her to uncover the truth, even when it challenges her upbringing."
+        },
+        sevika: {
+            name: "Sevika",
+            image: "images/sevika.jpg",
+            bio: "https://arcane.fandom.com/wiki/Sevika",
+            description: "A hardened fighter loyal to Silco, Sevika believes in strength and survival. While ruthless, her loyalty is earned, not bought, and she fights for Zaun's future on her own terms."
+        },
+        isha: {
+            name: "Isha",
+            image: "images/isha.jpg",
+            bio: "https://arcane.fandom.com/wiki/Isha",
+            description: "A quiet yet powerful presence, Isha operates in the shadows. Her insight, strength, and calculated choices reveal a deep understanding of the war around her, and how to survive it."
+        },
+        ambessa: {
+            name: "Ambessa Medarda",
+            image: "images/ambessa.jpg",
+            bio: "https://arcane.fandom.com/wiki/Ambessa_Medarda",
+            description: "A fierce Noxian warlord and Mel's mother, Ambessa believes power must be seized and held with strength. Her leadership is brutal, but she sees it as necessary to survive a violent world."
+        },
+        maddie: {
+            name: "Maddie",
+            image: "images/maddie.jpg",
+            bio: "https://arcane.fandom.com/wiki/Maddie_Nolen",
+            description: "Cunning and deceptive, Maddie hides ambition behind charm. As a double agent, she manipulates her way into power, but her loyalties remain a dangerous mystery."
+        },
+        singed: {
+            name: "Singed",
+            image: "images/singed.jpg",
+            bio: "https://arcane.fandom.com/wiki/Singed",
+            description: "An unflinching scientist, Singed sacrifices everything in the name of progress. His experiments often blur the line between science and cruelty, but he believes the end justifies the means."
+        }
+    };
+
+    const topCharacter = Object.entries(characterScores)
+    .sort((a, b) => b[1] - a[1])[0][0]; // character with highest score
+
+    const char = characters[topCharacter];
+
+    const html = `
+        <h2>You got: ${char.name}</h2>
+        <img class="character-img" src="${char.image}" alt="${char.name}">
+        <p>${char.description}</p>
+        <a class="read-more-btn" href="${char.bio}" target="_blank">Read More</a>`;
+
+    resultContainer.innerHTML = html;
+
+    // Hide the form and show result page
+    document.getElementById("quiz-form").style.display = "none";
+    document.querySelector(".result-page").classList.add("active");
+    }
+</script>
+</body>
+</html>

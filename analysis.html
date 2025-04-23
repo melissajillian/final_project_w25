@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Analysis</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#other-main" class="skip-link">Skip to Main Content</a>
+            <!-- <a href="index.html">
+                <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+            </a> -->
+            <nav class="navigation">
+                <a href="index.html">
+                    <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+                </a>
+                <!-- The hamburger menu -->
+                <label class="ham" for='menu' tabindex="0">
+                    <img src="images/hamburger.png" alt="three white lines to make hamburger menu">
+                </label>
+                <input id='menu' type='checkbox' />
+                <ul class="nav-links">
+                    <!-- <li class="active"><a href = "index.html">Home</a></li> I linked the Monkey logo, so I don't want a redundant link -->
+                    <li><a href = "characters.html">Characters</a></li>
+                    <li class="active"><a href = "analysis.html">Dive Deeper</a></li>
+                    <li><a href = "quiz.html">Quiz</a></li>
+                </ul>
+             </nav>
+    </header>
+<main id="other-main">
+    <h1 class="analysish1">Dive Deeper into the world of Arcane</h1>
+    <section id="analysis-section">
+
+        <div class="analysis-cards-container">
+            <a href="themes.html" class="card-link">
+                <div class="theme-card">
+                    <div class="card-content">
+                        <h2>Themes of Arcane</h2>
+                        <p>Explore the powerful ideas behind the story - power, trauma, inequality.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="analysis-cards-container">
+            <a href="visuals.html" class="card-link">
+                <div class="visuals-card">
+                    <div class="card-content">
+                        <h2>Visual Storytelling & Symbolism</h2>
+                        <p>Break down how Arcane uses color, lighting, and framing to speak volumes.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="analysis-cards-container">
+            <a href="sibling-bonds.html" class="card-link">
+                <div class="sisters-card">
+                    <div class="card-content">
+                        <h2>Sibling Bonds and Betrayal</h2>
+                        <p>From sisters to bitter rivals, explore how the bond between Vi and Jinx becomes the heart of Arcane's story.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="analysis-cards-container">
+            <a href="science.html" class="card-link">
+                <div class="science-card">
+                    <div class="card-content">
+                        <h2>Science vs. Morality</h2>
+                        <p>Jayce and Viktor push the boundaries of ethics, power, and progress with Hextech.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- <div class="analysis-cards-container">
+            <a href="trauma.html" class="card-link">
+                <div class="trauma-card">
+                    <div class="card-content">
+                        <h2>Trauma and Identity</h2>
+                        <p>Explore how characters like Jinx and Viktor are shaped by their trauma, and how it affects their choices and sense of self.</p>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+        <!-- <div class="analysis-cards-container">
+            <a href="power.html" class="card-link">
+                <div class="power-card">
+                    <div class="card-content">
+                        <h2>Power and Corruption</h2>
+                        <p>Characters like Silco and Mel navigate power differently - is control worth sacrificing humanity?</p>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+        <div class="analysis-cards-container">
+            <a href="innovation.html" class="card-link">
+                <div class="innovation-card">
+                    <div class="card-content">
+                        <h2>The Price of Innovation</h2>
+                        <p>Is Hextech salvation or destruction? Who gets to decide how it's used?</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="analysis-cards-container">
+            <a href="classDivide.html" class="card-link">
+                <div class="divide-card">
+                    <div class="card-content">
+                        <h2>Class Divide: Piltover vs. Zaun</h2>
+                        <p>The stark differences in wealth, power, and opportunity between two cities, and how it drives conflict.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="analysis-cards-container">
+            <a href="revolution.html" class="card-link">
+                <div class="revolution-card">
+                    <div class="card-content">
+                        <h2>Rebellion and Revolution</h2>
+                        <p>Silco's dream of Zaunite independence and the chaos that comes with shaking the system.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+</main>
+<footer class="site-footer">
+    <p>© Copyrights <span id="year"></span> by Melissa Walters. All rights reserved.</p>
+</footer>
+</body>
+<script>
+    // got help from codexworld.com and the in-class exercise
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>

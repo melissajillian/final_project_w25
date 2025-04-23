@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Innovation</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#other-main" class="skip-link">Skip to Main Content</a>
+            <!-- <a href="index.html">
+                <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+            </a> -->
+            <nav class="navigation">
+                <a href="index.html">
+                    <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+                </a>
+                <!-- The hamburger menu -->
+                <label class="ham" for='menu' tabindex="0">
+                    <img src="images/hamburger.png" alt="three white lines to make hamburger menu">
+                </label>
+                <input id='menu' type='checkbox' />
+                <ul class="nav-links">
+                    <!-- <li class="active"><a href = "index.html">Home</a></li> I linked the Monkey logo, so I don't want a redundant link -->
+                    <li><a href = "characters.html">Characters</a></li>
+                    <li><a href = "analysis.html">Dive Deeper</a></li>
+                    <li><a href = "quiz.html">Quiz</a></li>
+                </ul>
+             </nav>
+    </header>
+<main id="other-main">
+    <h1 class="analysish1">The Price of Innovation</h1>
+    <div class="summary">
+        <p>
+            Innovation is at the heart of <em>Arcane</em>. From the discovery of Hextech to Zaun's experiments with shimmer, the series constantly asks, <em>what is the true cost of progress?</em> As characters chase discovery, power, and purpose, they are forced to confront what, or who, must be sacrificed along the way. The price is never just technological, it's emotional, ethical, and deeply human.
+        </p>
+    </div>
+    <h2 class="analysis-title">Progress comes at a Cost</h2>
+    <section class="image-grid">
+        <img src="images/councilorJayce.webp" alt="Image 1">
+        <img src="images/silcoShimmer2.gif" alt="Image 2">
+        <img src="images/jayceVikMel.jpg" alt="Image 3">
+        <div class="stage-text">
+            <h3 class="caption-title"><strong>Jayce and the Dream of a Better Future</strong></h3>
+            <p>Jayce begins with a noble vision - to use science to uplift society and improve lives. With Viktor by his side, Hextech is born as a symbol of unity between magic and science. But as Piltover's elite demand results, politics creep in, and Jayce becomes entangled in power struggles that threaten to undermine his ideals. The dream slowly erodes, and innovation becomes weaponized. His compromises beg the question, <em>at what point does invention stop serving people and start serving power?</em></p><br>
+            <p><strong>Symbolism: The Hexgate bridges represent opportunity, but also exposure - both to progress and to vulnerability.</strong></p>
+        </div>
+
+        <img src="images/VanderViPow2.jpg" alt="Image 4">
+        <img src="images/silcoJinx2.gif" alt="Image 5">
+        <img src="images/familyreunion2.jpg" alt="Image 6">
+        <div class="stage-text">
+            <h3 class="caption-title"><strong>Viktor's Obsession with Transcendence</strong></h3>
+            <p>While Jayce seeks societal progress, Viktor's motivations are deeply personal. Stricken by illness and shaped by a childhood in Zaun, he sees Hextech as a path to survival - not just for himself, but for others forgotten by Piltover's elite. However, as Viktor begins to push boundaries, his humanity slips. He sacrifices ethics, connection, and even life in pursuit of an ideal. <em>Arcane</em> presents his journey not as villainous, but as tragic - the slow corrosion of a man trying to beat time itself.</p><br>
+            <p><strong>Visual Note: Viktor's transformation is paired with an increasingly dark, sterile color palette, emphasizing isolation and loss of self.</strong></p>
+        </div>
+
+        <img src="images/powderMonkey.gif" alt="Image 7">
+        <img src="images/powderBreakdown.gif" alt="Image 8">
+        <img src="images/powderJinx.gif" alt="Image 9">
+        <div class="stage-text">
+            <h3 class="caption-title"><strong>Shimmer and the Dark Side of Innovation</strong></h3>
+            <p>In Zaun, innovation is driven by necessity, not luxury. Silco and Singed develop shimmer not to build a better world, but to survive in a brutal one. It enhances strength, mutates biology, and fuels revolution. But shimmer also strips away agency, identity, and compassion. It creates monsters, literal and metaphorical, while masking pain with power. Through shimmer, <em>Arcane</em> shows that progress without purpose becomes destruction.</p><br>
+            <p><strong>Character: Jinx, both mentally and physically altered by shimmer, becomes the ultimate product of innovation gone unchecked - brilliant, broken, and boundless.</strong></p>
+        </div>
+
+        <img src="images/viCait.gif" alt="Image 10">
+        <img src="images/fight.gif" alt="Image 11">
+        <img src="images/viktorJayceHug.webp" alt="Image 12">
+        <div class="stage-text">
+            <h3 class="caption-title"><strong>Moral Ambiguity and the Inventor's Burden</strong></h3>
+            <p>What makes innovation dangerous in <em>Arcane</em> is not the science itself, but the lack of moral restraint around it. No one sets out to destroy, but each character justifies their choices by a vision of the greater good. Whether it's Viktor's desperation, Jayce's ambition, or Singed's utilitarian coldness, the line between savior and destroyer blurs.</p><br>
+            <p><strong>The show challenges viewers to consider, can you change the world without changing yourself?</strong></p>
+        </div>
+
+      </section>
+</div>
+</main>
+<footer class="site-footer">
+    <p>© Copyrights <span id="year"></span> by Melissa Walters. All rights reserved.</p>
+</footer>
+<script>
+    // got help from codexworld.com and the in-class exercise
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>

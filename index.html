@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arcane</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#main" class="skip-link">Skip to Main Content</a>
+            <!-- <a class="active" href="index.html">
+                <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+            </a> -->
+            <nav class="navigation">
+              <a class="active" href="index.html">
+                <img src="images/monkey.webp" alt="Jinx's calling card - the monkey head" class="logo">
+              </a>
+
+              <!-- The hamburger menu -->
+              <label class="ham" for='menu' tabindex="0">
+                <img src="images/hamburger.png" alt="three white lines to make hamburger menu">
+              </label>
+              <input id='menu' type='checkbox'>
+
+              <ul class="nav-links">
+                  <!-- <li class="active"><a href = "index.html">Home</a></li> I linked the Monkey logo, so I don't want a redundant link -->
+                  <li><a href = "characters.html">Characters</a></li>
+                  <li><a href = "analysis.html">Dive Deeper</a></li>
+                  <li><a href = "quiz.html">Quiz</a></li>
+              </ul>
+             </nav>
+        </div>
+        <div id="title-page">
+            <!-- top glass -->
+            <div id="glassTop"><img src="images/glassTop.png" alt="shards of glass pointing down"></div>
+            <!-- background video => help from w3schools -->
+            <video autoplay loop muted plays-inline class="trailer">
+              <source src="images/ArcaneTrailer.mp4" title="trailer for the tv show arcane">
+            </video>
+            <!-- background image for reduced motion -->
+            <!-- <img class="trailer-image" src="images/arcane.jpg" alt="Arcane charactr collage"> -->
+            <!-- bottom glass -->
+            <div id="glassBottom"><img src="images/glassBottom.png" alt="shards of glass pointing up"></div>
+
+            <!-- middle letters -->
+            <div class="mainContent">
+              <div id="letters">
+                <div><img src="images/A.logo.png" alt="the letter A in the Arcane font style"></div>
+                <div><img src="images/R.logo.png" alt="the letter R in the Arcane font style"></div>
+                <div><img src="images/C.logo.png" alt="the letter C in the Arcane font style"></div>
+                <div><img src="images/A.logo.png" alt="the letter A in the Arcane font style"></div>
+                <div><img src="images/N.logo.png" alt="the letter N in the Arcane font style"></div>
+                <div><img src="images/E.logo.png" alt="the letter E in the Arcane font style"></div>
+              </div>
+              <div id="lolLogo"><img src="images/lollogo.png" alt="league of legends logo"></div>
+            </div>
+    </header>
+    <main id="main">
+    <section id="h1class">
+      <h1 class="home-title">About Arcane</h1>
+    </section>
+    <section id="synopsis-section">
+        <div class="synopsis-container">
+            <p><strong>Genre:</strong> Action, Drama, Sci-Fi, Fantasy</p>
+            <p><strong>Based on:</strong> The <em>League of Legends</em> universe</p>
+            <p><strong>Streaming on:</strong> Netflix</p><br>
+
+            <h2>Synopsis</h2>
+            <p>
+                <em>Arcane</em> is a visually stunning animated series that explores the origin stories of two iconic <em>League of Legends</em> champions: Vi and Jinx. Set in the dual cities
+                of Piltover, a gleaming hub of innovation, and Zaun, its polluted, oppressed underbelly, the show dives into themes of class divide, power, and the cost of progress.
+            </p><br>
+            <p>
+                As tensions rise between the two cities, the invention of a powerful new magical technology, Hextech,
+                threatens to upset the fragile balance. At the same time, personal conflicts erupt among the cast of characters.
+                Sisters are torn apart, alliances shift, and the line between good and evil blurs.
+            </p><br>
+            <h2>Why it Stands Out</h2>
+              <p>Complex characters</p>
+              <p>Killer soundtrack featuring a variety of artists</p>
+              <p>Groundbreaking animation style by Fortiche Productions</p>
+              <p>Deep emotional storytelling (even if you've never played the game)</p>
+        </div>
+    </section>
+
+    <h2 class="exploreh2">Explore More</h2>
+    <section id="cards-section">
+        <div class="cards-container">
+          <a href="characters.html" class="character-card">
+            <!-- <img src="images/mask.jpg" alt="Characters from Arcane" class="card-img"> -->
+            <h3>Characters</h3>
+            <p>Explore personalities, motivations, and backstories of the characters.</p>
+          </a>
+
+          <a href="analysis.html" class="divedeeper-card">
+            <!-- <img src="images/analysis.jpg" alt="Dive deeper into Arcane" class="card-img"> -->
+            <h3>Dive Deeper</h3>
+            <p>Unpack the symbolism, themes, and hidden details of the show.</p>
+          </a>
+
+          <a href="quiz.html" class="quiz-card">
+            <!-- <img src="images/quiz.jpg" alt="Arcane character quiz" class="card-img"> -->
+            <h3>Take the Quiz</h3>
+            <p>Find out which Arcane character you're most like.</p>
+          </a>
+        </div>
+      </section>
+</main>
+<footer class="site-footer">
+    <p>© Copyrights <span id="year"></span> by Melissa Walters. All rights reserved.</p>
+</footer>
+</body>
+<script>
+    // got help from codexworld.com and the in-class exercise
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>
